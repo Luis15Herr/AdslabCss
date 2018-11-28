@@ -1,0 +1,92 @@
+.page-footer {
+  background-color: $gray-border;
+  .footer-content {
+    .col {
+      padding: 0;
+    }
+    .footer-logo {
+      img {
+        width: 120px;
+      }
+    }
+    .copyright {
+      color: $gray;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin-right: 0;
+      .dropdown-trigger {
+        margin-left: 15px;
+        background-color: #EFEFEF;
+        box-shadow: none;
+        border: 1px solid $gray;
+        color: $gray;
+        padding: 0 8px;
+        display: flex;
+        align-items: center;
+        position: relative;
+        span {
+          margin-left: 3px;
+        }
+        span:first-child {
+          margin-right: 3px;
+          font-size: 1.2em;
+        }
+      }
+      .dropdown-lenguage {
+        width: 78px !important;
+        left: 0;
+        top: 0;
+        height: 74px !important;
+        min-width: 72px !important;
+        position: absolute;
+        li {
+          text-align: center;
+          min-height: 0 !important;
+          a {
+            padding: 7px;
+            color: $gray;
+          }
+        }
+      }
+    }
+  }
+  .row {
+    padding: 30px 0;
+    margin-bottom: 0;
+  }
+  .footer-gradient {
+    background: rgba(71, 51, 201, 1);
+    background: -moz-linear-gradient(left, rgba(71, 51, 201, 1) 0%, rgba(27, 118, 255, 1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(71, 51, 201, 1)), color-stop(100%, rgba(27, 118, 255, 1)));
+    background: -webkit-linear-gradient(left, rgba(71, 51, 201, 1) 0%, rgba(27, 118, 255, 1) 100%);
+    background: -o-linear-gradient(left, rgba(71, 51, 201, 1) 0%, rgba(27, 118, 255, 1) 100%);
+    background: -ms-linear-gradient(left, rgba(71, 51, 201, 1) 0%, rgba(27, 118, 255, 1) 100%);
+    background: linear-gradient(to right, rgba(71, 51, 201, 1) 0%, rgba(27, 118, 255, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4733c9', endColorstr='#1b76ff', GradientType=1);
+    height: 7px;
+  }
+}
+
+@media (max-width: 600px) {
+  .page-footer {
+    padding-top: 0;
+    .footer-content {
+      .footer-logo {
+        text-align: center;
+      }
+      .copyright {
+        justify-content: center;
+        flex-wrap: wrap;
+        p {
+          text-align: center;
+          width: 100%;
+          margin: 0;
+        }
+        .dropdown-trigger {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}

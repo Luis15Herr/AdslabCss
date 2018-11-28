@@ -1,0 +1,54 @@
+.categories-container {
+  width: 100%;
+  height: 50px;
+  padding: 0 0.75rem;
+  h4 {
+    color: $gray;
+    display: inline-block;
+    font-size: 2em;
+    font-weight: 300;
+  }
+  span {
+    font-size: 1.9em;
+    color: $gray;
+    position: relative;
+    top: 5px;
+  }
+  h3 {
+    font-size: 2.6em;
+    color: $principal-blue;
+    font-weight: 300;
+    display: inline-block;
+  }
+}
+
+@media (max-width: 1024px) {
+  .categories-container {
+    h4 {
+      font-size: 1.6em;
+    }
+    span {
+      font-size: 1.7em;
+    }
+    h3 {
+      font-size: 2.4em;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .categories-container {
+    height: auto;
+    h4 {
+      font-size: 1.4em;
+      margin: 0;
+    }
+    span {
+      font-size: 1.3em;
+    }
+    h3 {
+      font-size: 1.9em;
+      margin: 0;
+    }
+  }
+}

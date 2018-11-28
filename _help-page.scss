@@ -1,0 +1,373 @@
+.help-banner {
+  background-color: $principal-blue;
+  background-image: url("../assets/img/help-img-banner.png");
+  height: 400px;
+  background-repeat-y: no-repeat;
+  background-position-x: -80px;
+  transition: 0.5s ease all;
+  .container {
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-content: flex-end;
+    flex-wrap: wrap;
+    h1 {
+      margin: 0;
+      color: white;
+      font-size: 4.5em;
+      font-weight: 300;
+      width: 100%;
+      text-align: center;
+    }
+    .flexsearch {
+      width: 70%;
+      margin-top: 30px;
+      .flexsearch--wrapper {
+        height: auto;
+        width: 100%;
+        background: transparent;
+        margin: 0;
+        position: static;
+        .search-validation {
+          margin-left: 20px;
+          color: #ffcc00;
+          transition: opacity 0.5s ease-out;
+          opacity: 0;
+          height: 0;
+          overflow: hidden;
+        }
+        .flexsearch--form {
+          position: relative;
+          .flexsearch--input-wrapper {
+            overflow: hidden;
+            border-radius: 35px;
+            position: relative;
+            .flexsearch--input {
+              width: 90%;
+              -webkit-box-sizing: content-box;
+              -moz-box-sizing: content-box;
+              box-sizing: content-box;
+              height: 3em;
+              border-radius: 35px;
+              background-color: $blue-input;
+              color: white;
+              font-size: 1.5em !important;
+              -webkit-appearance: none;
+              -moz-appearance: none;
+              margin: 0;
+              border: none;
+              padding: 0 25px;
+            }
+            .flexsearch--input:focus {
+              border-bottom: 0 solid #000;
+              box-shadow: 0 0 0 0 transparent;
+              transition: 0.5s ease all;
+            }
+            input[type=search]:not(.browser-default):focus:not([readonly]) {
+              border-bottom: 0 solid #000;
+              box-shadow: 0 0 0 0 transparent;
+              transition: 0.5s ease all;
+            }
+            .flexsearch--submit {
+              position: absolute;
+              right: 0;
+              top: 0;
+              display: flex;
+              width: 60px;
+              height: 100%;
+              padding: 0;
+              border: none;
+              border-radius: 0 0 35px;
+              background-color: $blue-input;
+              justify-content: center;
+              color: white;
+              font-size: 2em;
+              transition: 0.5s ease all;
+            }
+            .flexsearch--input:focus.flexsearch--submit {
+              color: white;
+              transition: 0.5s ease all;
+            }
+            .flexsearch--submit:hover {
+              color: $gray;
+              cursor: pointer;
+              transition: 0.5s ease all;
+            }
+            ::-webkit-input-placeholder {
+              color: white;
+            }
+            input:-moz-placeholder {
+              color: white;
+            }
+          }
+          .predicted-search {
+            width: 100%;
+            position: absolute;
+            transform: scaleY(0);
+            transform-origin: top;
+            transition: all 0.4s;
+            h3 {
+              font-size: 2em;
+              color: $gray;
+              margin: 0;
+              padding: 10px 0;
+              text-align: center;
+            }
+            #datafetch {
+              width: 90%;
+              margin: auto;
+              background: white;
+              overflow: hidden;
+              border-radius: 0 0 15px 15px;
+              -webkit-box-shadow: 15px 07px 07px 5px rgba(0, 0, 0, 0.06);
+              -moz-box-shadow: 15px 07px 07px 5px rgba(0, 0, 0, 0.06);
+              box-shadow: 15px 07px 07px 5px rgba(0, 0, 0, 0.06);
+              li {
+                width: 100%;
+                a {
+                  color: $text-blue;
+                  font-size: 1.5em;
+                  transition: 0.5s ease all;
+                  padding-left: 10px;
+                  display: block;
+                }
+                a:hover {
+                  background-color: rgba(0, 0, 0, 0.1);
+                  padding-left: 15px;
+                  transition: 0.5s ease all;
+                }
+              }
+              .spring-spinner, .spring-spinner * {
+                box-sizing: border-box;
+              }
+              .spring-spinner {
+                height: auto;
+                width: 40px;
+                margin: auto;
+                padding: 10px 0;
+              }
+              .spring-spinner .spring-spinner-part {
+                overflow: hidden;
+                height: calc(30px / 2);
+                width: 30px;
+              }
+              .spring-spinner .spring-spinner-part.bottom {
+                transform: rotate(180deg) scale(-1, 1);
+              }
+              .spring-spinner .spring-spinner-rotator {
+                width: 30px;
+                height: 30px;
+                border: calc(30px / 7) solid transparent;
+                border-right-color: $text-blue;
+                border-top-color: $text-blue;
+                border-radius: 50%;
+                box-sizing: border-box;
+                animation: spring-spinner-animation 3s ease-in-out infinite;
+                transform: rotate(-200deg);
+              }
+              @keyframes spring-spinner-animation {
+                0% {
+                  border-width: calc(30px / 7);
+                }
+                25% {
+                  border-width: calc(30px / 23.33);
+                }
+                50% {
+                  transform: rotate(115deg);
+                  border-width: calc(30px / 7);
+                }
+                75% {
+                  border-width: calc(30px / 23.33);
+                }
+                100% {
+                  border-width: calc(30px / 7);
+                }
+              }
+            }
+          }
+          .predicted-search-active {
+            transform: scaleY(1);
+          }
+        }
+      }
+    }
+  }
+}
+
+.helpPage-content {
+  padding: 100px 0;
+  .help {
+    display: flex;
+    align-items: center;
+    .icon-title {
+      span {
+        margin-right: 15px;
+        font-size: 3em;
+        color: $text-blue;
+      }
+    }
+    .title {
+      border-bottom: 4px solid $text-blue;
+      display: inline-block;
+      h3 {
+        color: $text-blue;
+        margin: 0;
+        margin-bottom: 10px;
+      }
+    }
+  }
+  .links {
+    li {
+      border-bottom: 2px solid #e4e4e4;
+      height: 70px;
+      line-height: 70px;
+      a {
+        color: #666;
+        font-size: 2.2em;
+        display: block;
+        height: 70px;
+        span {
+          font-size: 0.7em;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+  /*---Help-Page-Questions---*/
+  .helpPage-question {
+    .title {
+      color: $text-blue;
+      h2 {
+        font-size: 3em;
+        display: flex;
+        align-items: center;
+      }
+      span {
+        font-size: 0.5em;
+        margin-right: 15px;
+      }
+    }
+  }
+}
+
+section.helpPage-content:last-child {
+  padding-top: 0;
+}
+
+@media (max-width: 800px) {
+  .help-banner {
+    height: 350px;
+    .container {
+      h1 {
+        font-size: 3.5em;
+      }
+    }
+  }
+  .helpPage-content {
+    padding: 40px 0;
+    .help {
+      .icon-title {
+        span {
+          font-size: 2.5em;
+        }
+      }
+      .title {
+        h3 br {
+          display: none;
+        }
+      }
+    }
+    .links {
+      li {
+        height: 60px;
+        line-height: 60px;
+        a {
+          font-size: 2em;
+          height: 50px;
+          span {
+            font-size: 0.6em;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .help-banner {
+    height: 190px;
+    background-size: contain;
+    .container {
+      height: 100%;
+      h1 {
+        font-size: 2.1em;
+      }
+      .flexsearch {
+        margin-top: 15px;
+        width: 85%;
+        .flexsearch--wrapper {
+          .flexsearch--form {
+            .flexsearch--input-wrapper {
+              .flexsearch--input {
+                font-size: 1em !important;
+              }
+              .flexsearch--submit {
+                font-size: 1.5em;
+              }
+            }
+            .predicted-search {
+              h3 {
+                font-size: 1.5em;
+              }
+              #datafetch {
+                width: 85%;
+                li {
+                  a {
+                    font-size: 1em;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .helpPage-content {
+    .help {
+      .title {
+        border-bottom: 2px solid $text-blue;
+        h3 {
+          font-size: 1.8em;
+        }
+        h3 br {
+          display: block;
+        }
+      }
+    }
+    .links {
+      li {
+        height: 40px;
+        line-height: 40px;
+        border-bottom: 1px solid #e4e4e4;
+        a {
+          font-size: 1.3em;
+          height: 40px;
+          span {
+            font-size: 0.6em;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 325px) {
+  .help-banner {
+    .container {
+      .flexsearch {
+        width: 90%;
+      }
+    }
+  }
+}

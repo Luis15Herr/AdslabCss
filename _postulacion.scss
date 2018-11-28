@@ -1,0 +1,235 @@
+.form-content {
+  background-color: white;
+  padding-top: 60px;
+  .form-inputs {
+    .input-field {
+      margin-bottom: 0;
+      input:focus, textarea:focus {
+        border-bottom: 1px solid $principal-blue;
+        box-shadow: 0 1px 0 0 $principal-blue;
+      }
+      p {
+        font-size: 1.2em !important;
+        color: $gray;
+      }
+      textarea {
+        height: 200px;
+        color: $gray;
+        resize: none;
+        max-height: 200px;
+        overflow: auto;
+
+      }
+      textarea::-webkit-scrollbar-thumb {
+        background-color: $principal-blue;
+        border-radius: 5px;
+        border: 1px solid white;
+      }
+      textarea::-webkit-scrollbar {
+        width: 7px;
+        background-color: white;
+      }
+      input[type=email] {
+        margin-bottom: 2px;
+      }
+      .helper-text {
+        font-size: 1em;
+      }
+    }
+    .countries-wrapper {
+      .dropdown-content li > a, .dropdown-content li > span {
+        color: $gray;
+      }
+    }
+  }
+  .text-form {
+    padding-top: 35px;
+    padding-right: 20px;
+    h1 {
+      color: $text-blue;
+      font-size: 4.5em;
+      margin-bottom: 0;
+    }
+    p {
+      font-size: 2em;
+      margin-top: 0;
+      color: $gray;
+    }
+  }
+  .container-row {
+    display: flex;
+    flex-wrap: wrap;
+    .succes {
+      align-self: center;
+    }
+  }
+}
+
+.form-succes {
+  div {
+    width: 100%;
+  }
+  span {
+    font-size: 7em;
+    color: $text-blue;
+  }
+  h4 {
+    color: $text-blue;
+    font-size: 3em;
+  }
+  p {
+    font-size: 1.7em;
+    color: #999;
+    margin: 0;
+  }
+}
+
+.postulation-btn {
+  padding-top: 15px !important;
+  padding-bottom: 80px !important;
+  input {
+    padding: 10px;
+    border: 1px solid $text-blue;
+    width: 50%;
+    display: inline-block;
+    text-align: center;
+    border-radius: 30px;
+    font-size: 1.4em;
+    font-weight: 500;
+    color: $text-blue;
+    background-color: white;
+  }
+  input:hover {
+    color: white;
+    background-color: $text-blue;
+    transition: all 0.5s ease;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 1280px) {
+  body {
+    input, textarea {
+      font-size: 1em !important;
+    }
+  }
+  .form-content {
+    .text-form {
+      padding-top: 30px;
+      padding-right: 20px;
+      h1 {
+        font-size: 3em;
+        margin-bottom: 0;
+      }
+      p {
+        font-size: 1.5em;
+        margin-top: 0;
+      }
+    }
+    .postulation-btn {
+      input {
+        font-size: 1.2em;
+      }
+    }
+    .form-succes {
+      h4 {
+        font-size: 2.5em;
+      }
+      p {
+        font-size: 1.3em;
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .form-content {
+    .text-form {
+      text-align: center;
+      h1 {
+        br {
+          display: none;
+        }
+        font-size: 2.8em;
+        margin-top: 10px;
+      }
+      p {
+        font-size: 1.3em;
+        br {
+          display: none;
+        }
+      }
+    }
+    .postulation-btn {
+      padding-bottom: 40px !important;
+      input {
+        font-size: 1.2em;
+        width: 100%;
+      }
+    }
+    .form-succes {
+      h4 {
+        font-size: 2.5em;
+      }
+      p {
+        font-size: 1.3em;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .form-content {
+    padding-top: 0;
+    .text-form {
+      h1 {
+        font-size: 2.5em;
+        margin-top: 10px;
+        text-align: center;
+        br {
+          display: none;
+        }
+      }
+      p {
+        font-size: 1.2em;
+        text-align: center;
+        br {
+          display: none;
+        }
+      }
+    }
+    .postulation-btn {
+      padding-bottom: 20px !important;
+      input {
+        font-size: 1.1em;
+        width: 100%;
+      }
+    }
+    .form-succes {
+      text-align: center;
+      padding-top: 15px;
+      h4 {
+        font-size: 2.3em;
+      }
+      p {
+        font-size: 1.1em;
+      }
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .form-content {
+    padding-top: 0;
+    .text-form {
+      div {
+        img {
+          width: 80%;
+        }
+      }
+    }
+    .form-succes span {
+      font-size: 6em;
+    }
+  }
+}

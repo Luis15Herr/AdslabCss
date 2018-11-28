@@ -1,0 +1,87 @@
+.result-container {
+  width: 100%;
+  height: 50px;
+  padding: 0 0.75rem;
+  h4 {
+    color: $gray;
+    font-size: 2.1em;
+    font-weight: 300;
+    margin: 0;
+  }
+  h3 {
+    font-size: 2.4em;
+    color: $principal-blue;
+    font-weight: 300;
+    display: inline-block;
+    margin: 0;
+  }
+}
+
+.no-results {
+  .no-results-text {
+    p {
+      width: 70%;
+      font-size: 2em;
+      color: $gray;
+      margin: auto;
+      span {
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .result-container {
+    h4 {
+      font-size: 1.9em;
+    }
+    h3 {
+      font-size: 2.2em;
+    }
+  }
+  .no-results {
+    .img-container {
+      img {
+        width: 25%;
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .post-no-results {
+    .posts {
+      min-height: auto;
+    }
+  }
+  .no-results {
+    .no-results-text {
+      p {
+        font-size: 1.7em;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .result-container {
+    h4 {
+      font-size: 1.5em;
+    }
+    h3 {
+      font-size: 1.8em;
+    }
+  }
+  .no-results {
+    padding: 20px;
+    .img-container {
+      padding: 20px 0;
+    }
+    .no-results-text {
+      p {
+        font-size: 1em;
+      }
+    }
+  }
+}

@@ -1,0 +1,197 @@
+@font-face {
+  font-family: 'adslab';
+  src:  url('../fonts/adslab.eot?lxabpm');
+  src:  url('../fonts/adslab.eot?lxabpm#iefix') format('embedded-opentype'),
+    url('../fonts/adslab.ttf?lxabpm') format('truetype'),
+    url('../fonts/adslab.woff?lxabpm') format('woff'),
+    url('../fonts/adslab.svg?lxabpm#adslab') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="ads-"], [class*=" ads-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'adslab' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ads-adslab-name:before {
+  content: "\e904";
+}
+.ads-adslab-ico:before {
+  content: "\e925";
+}
+.ads-adslab-01:before {
+  content: "\e926";
+}
+.ads-adslab-02:before {
+  content: "\e927";
+}
+.ads-arista-video:before {
+  content: "\e928";
+}
+.ads-map:before {
+  content: "\e900";
+}
+.ads-sign-out:before {
+  content: "\e901";
+}
+.ads-circle-outline:before {
+  content: "\e902";
+}
+.ads-pencil-edit-button:before {
+  content: "\e903";
+}
+.ads-remove:before {
+  content: "\e905";
+}
+.ads-rounded-remove-button:before {
+  content: "\e906";
+}
+.ads-rubbish-bin-delete-button:before {
+  content: "\e907";
+}
+.ads-question:before {
+  content: "\e908";
+}
+.ads-left-arrow:before {
+  content: "\e909";
+}
+.ads-right-arrow:before {
+  content: "\e90a";
+}
+.ads-tick:before {
+  content: "\e90b";
+}
+.ads-delete-button:before {
+  content: "\e90c";
+}
+.ads-plus-button:before {
+  content: "\e90d";
+}
+.ads-information:before {
+  content: "\e90e";
+}
+.ads-cancel:before {
+  content: "\e90f";
+}
+.ads-checked:before {
+  content: "\e910";
+}
+.ads-frame-landscape:before {
+  content: "\e911";
+}
+.ads-bell:before {
+  content: "\e912";
+}
+.ads-man-user:before {
+  content: "\e913";
+}
+.ads-coin:before {
+  content: "\e914";
+}
+.ads-home:before {
+  content: "\e915";
+}
+.ads-goal:before {
+  content: "\e916";
+}
+.ads-add-folders:before {
+  content: "\e917";
+}
+.ads-ads:before {
+  content: "\e918";
+}
+.ads-campanas:before {
+  content: "\e919";
+}
+.ads-launch:before {
+  content: "\e91a";
+}
+.ads-megaphone:before {
+  content: "\e91b";
+}
+.ads-filter-tool:before {
+  content: "\e91c";
+}
+.ads-arrow-down:before {
+  content: "\e91d";
+}
+.ads-arrow-up:before {
+  content: "\e91e";
+}
+.ads-chevron-left:before {
+  content: "\e91f";
+}
+.ads-chevron-right:before {
+  content: "\e920";
+}
+.ads-close:before {
+  content: "\e921";
+}
+.ads-clock:before {
+  content: "\e922";
+}
+.ads-menu:before {
+  content: "\e923";
+}
+.ads-search:before {
+  content: "\e924";
+}
+.ads-phone:before {
+  content: "\e942";
+}
+.ads-telephone:before {
+  content: "\e95b";
+}
+.ads-edit:before {
+  content: "\e95c";
+}
+.ads-unlink:before {
+  content: "\e974";
+}
+.ads-link:before {
+  content: "\e975";
+}
+.ads-check:before {
+  content: "\e977";
+}
+.ads-mail:before {
+  content: "\e978";
+}
+.ads-firesoft:before {
+  content: "\e97a";
+}
+.ads-download:before {
+  content: "\e97b";
+}
+.ads-upload:before {
+  content: "\e97c";
+}
+.ads-warning:before {
+  content: "\ea07";
+}
+.ads-plus:before {
+  content: "\ea0a";
+}
+.ads-minus:before {
+  content: "\ea0b";
+}
+.ads-list:before {
+  content: "\e9bb";
+}
+.ads-eye:before {
+  content: "\e9ce";
+}
+.ads-eye-blocked:before {
+  content: "\e9d1";
+}

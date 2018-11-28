@@ -1,0 +1,124 @@
+.error-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  .img-error {
+    width: 100%;
+    display: flex;
+    img {
+      margin: auto;
+    }
+  }
+  .text-error {
+    width: 100%;
+    h3 {
+      color: $text-blue;
+      font-family: 'Roboto', sans-serif !important;
+    }
+    h4 {
+      color: $gray;
+      font-size: 1.8em;
+      margin-top: 0;
+      font-family: 'Roboto', sans-serif !important;
+    }
+  }
+  .goBack-btn {
+    width: 100%;
+    padding: 50px;
+    a {
+      text-align: center;
+      display: inline-block;
+      width: 20%;
+      padding: 10px 0;
+      border: 2px solid $light-gray;
+      border-radius: 30px;
+      font-size: 1.5em;
+      color: $gray;
+      transition: 0.5s ease all;
+      font-family: 'Roboto', sans-serif !important;
+    }
+    a:hover {
+      border-color: $text-blue;
+      transition: 0.5s ease all;
+      color: $text-blue;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .error-container {
+    .img-error {
+      img {
+        height: 180px;
+      }
+    }
+    .text-error {
+      h3 {
+        font-size: 2em;
+      }
+      h4 {
+        font-size: 1.5em;
+      }
+    }
+    .goBack-btn {
+      padding: 15px;
+      a {
+        font-size: 1.2em;
+        width: 35%;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .error-container {
+    .img-error {
+      width: 100%;
+      img {
+        height: 150px;
+      }
+    }
+    .text-error {
+      h3 {
+        font-size: 1.8em;
+      }
+      h4 {
+        font-size: 1.3em;
+      }
+    }
+    .goBack-btn {
+      padding: 15px;
+      a {
+        font-size: 1em;
+        width: 35%;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .error-container {
+    .img-error {
+      img {
+        height: 125px;
+      }
+    }
+    .text-error {
+      padding: 0 20px;
+      h3 {
+        font-size: 1.6em;
+      }
+      h4 {
+        font-size: 1.1em;
+      }
+    }
+    .goBack-btn {
+      padding: 10px;
+      a {
+        width: 50%;
+      }
+    }
+  }
+}

@@ -2587,6 +2587,21 @@ main {
       .single-posts .post-banner .post-info .categories a:hover {
         text-decoration: underline;
         transition: 0.5s ease all; }
+.single-posts .post-inner {
+  position: relative; }
+  .single-posts .post-inner .post-social-share {
+    width: 5%;
+    display: inline-block;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    position: absolute; }
+    .single-posts .post-inner .post-social-share .social-position {
+      position: sticky;
+      top: 44%; }
+.single-posts .post-inner-content {
+  display: inline-block;
+  margin: auto; }
 .single-posts .post-title {
   padding: 0 90px; }
   .single-posts .post-title h1 {
@@ -2681,8 +2696,6 @@ main {
     z-index: 100000;
     /* Above WP toolbar. */ }
 .single-posts .social-sharing {
-  position: fixed;
-  top: 320px;
   transition: 0.5s ease all; }
   .single-posts .social-sharing ul {
     width: 50px;

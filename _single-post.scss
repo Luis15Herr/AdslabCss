@@ -59,6 +59,27 @@
     }
   }
 
+  .post-inner{
+    position: relative;
+    .post-social-share{
+      width: 5%;
+      display: inline-block;
+      height: 100%;
+      top: 0;
+      bottom: 0;
+      position: absolute;
+      .social-position{
+        position: sticky;
+        top: 44%;
+      }
+    }
+  }
+
+  .post-inner-content{
+    display: inline-block;
+    margin: auto;
+  }
+
   .post-title {
     padding: 0 90px;
 
@@ -193,8 +214,6 @@
   }
 
   .social-sharing {
-    position: fixed;
-    top: 320px;
     transition: 0.5s ease all;
 
     ul {

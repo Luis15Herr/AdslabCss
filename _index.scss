@@ -342,7 +342,7 @@
 
     .row {
       height: 100%;
-      margin-bottom: 100px;
+      margin-bottom: 130px;
 
       .padding {
         padding: 0 100px;
@@ -605,7 +605,6 @@
       right: 0;
     }
   }
-
   .subscription-section {
     .section6Bg-1 {
       height: 10%;
@@ -617,6 +616,13 @@
       height: 40%;
       transform: translate(50%, 0%);
       right: 0;
+    }
+
+    .container {
+      .row {
+        margin-bottom: 100px;
+
+      }
     }
   }
   .call-to-call {

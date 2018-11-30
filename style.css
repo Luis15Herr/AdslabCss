@@ -812,7 +812,7 @@ main {
     height: 100%; }
     .subscription-section .container .row {
       height: 100%;
-      margin-bottom: 100px; }
+      margin-bottom: 130px; }
       .subscription-section .container .row .padding {
         padding: 0 100px; }
       .subscription-section .container .row .col {
@@ -985,6 +985,8 @@ main {
     height: 40%;
     transform: translate(50%, 0%);
     right: 0; }
+  .subscription-section .container .row {
+    margin-bottom: 100px; }
 
   .call-to-call .call-container {
     padding: 45px 0px; }
@@ -1331,7 +1333,6 @@ main {
 
   .subscription-section {
     height: auto;
-    margin-bottom: 30px;
     margin-top: 60px; } }
 .body-blog {
   padding-top: 105px; }

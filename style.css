@@ -999,7 +999,7 @@ main {
 @media (max-width: 1024px) {
   /*----Landing----*/
   .main-section {
-    height: 35vh; }
+    height: 500px; }
     .main-section .bg-container .bg-img-main {
       width: 120%; }
     .main-section .container .row .col .img-container .bg-img {
@@ -1107,7 +1107,7 @@ main {
       font-size: 1.2em;
       height: auto;
       padding: 10px 0; } }
-@media (max-width: 800px) {
+@media (max-width: 992px) {
   .main-section {
     height: auto; }
     .main-section .bg-container .bg-img-main {
@@ -1222,7 +1222,7 @@ main {
       -webkit-box-shadow: none;
       -moz-box-shadow: none;
       box-shadow: none; } }
-@media (max-width: 800px) and (max-width: 600px) {
+@media (max-width: 992px) and (max-width: 600px) {
   .main-section {
     height: auto;
     position: relative;

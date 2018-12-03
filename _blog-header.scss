@@ -228,6 +228,10 @@
           border: 1px solid $blue-hover !important;
         }
 
+        .login-btn-mobile{
+          display: none!important;
+        }
+
         a {
           color: $text-blue;
           font-size: 1.3em;
@@ -408,6 +412,16 @@
         .brand-logo {
           img {
             height: 70%;
+          }
+        }
+        ul{
+          li{
+            .login-btn{
+                display: none!important;
+            }
+            .login-btn-mobile{
+              display: block!important;
+            }
           }
         }
       }

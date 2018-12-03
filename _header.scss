@@ -70,7 +70,6 @@ main {
           margin-right: 5px;
           border: 1px solid white;
           transition: 0.5s ease all;
-
         }
 
         .login-btn:hover {
@@ -79,6 +78,10 @@ main {
           border: 1px solid white;
           background-color: transparent;
           transition: 0.5s ease all;
+        }
+
+        .login-btn-mobile{
+          display: none;
         }
 
         a {
@@ -305,6 +308,32 @@ main {
   }
 }
 
+@media (max-width: 900px) {
+  #site-nav {
+    .nav-wrapper {
+      ul {
+        li {
+          a:hover {
+            #nav-icon1 {
+              span:nth-child(1) {
+                transform: translate(0px, 0);
+              }
+
+              span:nth-child(2) {
+                transform: translate(0px, 0);
+              }
+
+              span:nth-child(3) {
+                transform: translate(0px, 0);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: 800px) {
   body {
     .container {
@@ -333,31 +362,6 @@ main {
   }
 }
 
-@media (max-width: 900px) {
-  #site-nav {
-    .nav-wrapper {
-      ul {
-        li {
-          a:hover {
-            #nav-icon1 {
-              span:nth-child(1) {
-                transform: translate(0px, 0);
-              }
-
-              span:nth-child(2) {
-                transform: translate(0px, 0);
-              }
-
-              span:nth-child(3) {
-                transform: translate(0px, 0);
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-}
 
 @media (max-width: 600px) {
   .topnav {
@@ -396,6 +400,13 @@ main {
                 transform: translate(0px, 0);
               }
             }
+          }
+          .login-btn{
+              display: none;
+          }
+          .login-btn-mobile{
+            display: block!important;
+            padding: 0 10px !important;
           }
         }
       }

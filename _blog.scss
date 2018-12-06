@@ -1,8 +1,10 @@
 .body-blog {
   padding-top: 105px;
+
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Roboto', sans-serif;
   }
+
   p, span, a {
     font-family: 'Roboto', sans-serif;
   }
@@ -16,6 +18,7 @@
     overflow: hidden;
     display: flex;
     transition: 0.5s ease all;
+
     .media-post {
       overflow: hidden;
       transition: 0.5s ease all;
@@ -23,40 +26,49 @@
       filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4733c9', endColorstr='$principal-blue', GradientType=1);
       height: 100%;
       background-color: $principal-blue;
+
       .overlay {
         height: 100%;
         background-color: rgba(27, 118, 255, 0.6);
       }
     }
+
     .post-content {
       width: 80%;
       padding: 20px;
       flex-direction: column;
       justify-content: flex-end;
       display: flex;
+
       .post-title {
         a {
           color: $text-gray;
+
           h2 {
             font-size: 3em;
           }
         }
       }
+
       .post-text {
         font-size: 1.2em;
         color: $gray;
+
         p {
           line-height: 1.1;
           text-align: justify;
         }
       }
+
       .post-info {
         display: flex;
         align-items: center;
+
         .categories {
           span {
             font-size: 1.1em;
             color: $text-gray;
+
             &:first-child {
               &:after {
                 content: '|';
@@ -64,14 +76,17 @@
               }
             }
           }
+
           display: flex;
           flex-wrap: wrap;
+
           a {
             color: $text-blue;
             text-transform: uppercase;
             transition: 0.5s ease all;
             margin-right: 15px;
           }
+
           a:hover {
             text-decoration: underline;
             transition: 0.5s ease all;
@@ -80,15 +95,19 @@
       }
     }
   }
+
   .main-post:hover {
     border: 1px solid $text-blue;
     transition: 0.5s ease all;
+
     .media-post {
       width: 25%;
       transition: 0.5s ease all;
     }
+
     .post-content {
       width: 75%;
+
       .post-title {
         a {
           color: $titles;
@@ -96,11 +115,13 @@
       }
     }
   }
+
   .col:nth-child(2) {
     .secondary-post:first-child {
       margin-bottom: 10px;
     }
   }
+
   .secondary-post {
     transition: 0.5s ease all;
     border: 1px solid $gray-border;
@@ -108,35 +129,43 @@
     overflow: hidden;
     display: flex;
     height: 185px;
+
     .media-post {
       overflow: hidden;
       transition: 0.5s ease all;
       width: 3%;
       background-color: $principal-blue;
     }
+
     .post-content {
       padding: 15px;
       width: 97%;
       flex-direction: column;
       justify-content: flex-end;
       display: flex;
+
       .post-title {
         width: 95%;
+
         h4 {
           font-size: 1.9em;
           margin-top: 0;
         }
+
         a {
           color: $text-gray;
         }
       }
+
       .post-info {
         display: flex;
         align-items: center;
+
         .categories {
           span {
             font-size: 1.1em;
             color: $text-gray;
+
             &:first-child {
               &:after {
                 content: '|';
@@ -144,8 +173,10 @@
               }
             }
           }
+
           display: flex;
           flex-wrap: wrap;
+
           a {
             margin-right: 15px;
             color: $text-blue;
@@ -153,6 +184,7 @@
             transition: 0.5s ease all;
             font-size: 0.9em;
           }
+
           a:hover {
             text-decoration: underline;
             transition: 0.5s ease all;
@@ -161,15 +193,19 @@
       }
     }
   }
+
   .secondary-post:hover {
     border: 1px solid $text-blue;
     transition: 0.5s ease all;
+
     .media-post {
       width: 5%;
       overflow: hidden;
     }
+
     .post-content {
       width: 95%;
+
       .post-title {
         a {
           color: $titles;
@@ -184,11 +220,13 @@
     padding-top: 75px;
     padding-bottom: 25px;
   }
+
   .post-selector {
     display: flex;
     border: 1px solid $gray-border;
     border-radius: 10px;
     margin-bottom: 25px;
+
     .tabs {
       .tab {
         a.active {
@@ -196,15 +234,18 @@
           color: $principal-blue;
         }
       }
+
       .indicator {
         background-color: $principal-blue;
       }
     }
+
     .selection {
       width: 100%;
       text-align: center;
       display: flex;
       border-radius: 10px;
+
       a {
         width: 100%;
         display: inline-block;
@@ -219,27 +260,33 @@
 
 .posts {
   min-height: 1000px;
+
   .post {
     display: flex;
     margin: 0 25px 25px 0;
     height: 260px;
+
     .media-post {
       transition: 0.5s ease all;
       width: 15%;
       background-color: $principal-blue;
       border-radius: 10px;
       overflow: hidden;
+
       img {
         height: 100%;
       }
+
       .overlay {
         height: 100%;
         background-color: rgba(27, 118, 255, 0.7);
         text-align: left;
         padding: 20px;
+
         .day {
           font-weight: 500;
         }
+
         p {
           margin-top: 0;
           font-size: 1.4em;
@@ -248,29 +295,36 @@
         }
       }
     }
+
     .post-content {
       padding: 15px;
       width: 85%;
       max-height: 390px;
+
       .post-title {
         a {
           h3 {
             margin-top: 0;
             font-size: 2.5em;
           }
+
           color: $text-gray;
         }
       }
+
       .post-text {
         color: $gray;
+
         p {
           font-size: 1.1em;
         }
       }
+
       .post-info {
         .categories {
           display: flex;
           flex-wrap: wrap;
+
           a {
             margin-right: 15px;
             color: $text-blue;
@@ -278,6 +332,7 @@
             transition: 0.5s ease all;
             font-size: 0.9em;
           }
+
           a:hover {
             text-decoration: underline;
             transition: 0.5s ease all;
@@ -287,13 +342,17 @@
     }
 
   }
+
   .post:hover {
     transition: 0.5s ease all;
+
     .media-post {
       width: 18%;
     }
+
     .post-content {
       width: 82%;
+
       .post-title {
         a {
           color: $titles;
@@ -301,16 +360,20 @@
       }
     }
   }
+
   .pagination {
     padding: 20px 0;
+
     ul {
       text-align: center;
       width: 100%;
+
       li {
         font-size: 1.1em;
         height: 40px;
         width: 40px;
         line-height: 40px;
+
         a {
           height: 40px;
           width: 40px;
@@ -323,6 +386,7 @@
           align-items: center;
         }
       }
+
       .current {
         background-color: $light-gray;
         color: $titles;
@@ -335,6 +399,7 @@
         justify-content: center;
         align-items: center;
       }
+
       a:hover {
         background-color: $light-gray;
         color: $titles;
@@ -348,10 +413,12 @@
   .padding-col {
     padding-top: 75px;
   }
+
   .categories {
     border: 1px solid $gray-border;
     padding: 10px 25px;
     border-radius: 10px 10px 0 0;
+
     h6 {
       font-size: 1.6em;
       color: $text-gray;
@@ -359,6 +426,7 @@
       padding: 0 10px;
       text-transform: uppercase;
     }
+
     ul {
       a {
         font-size: 1.4em;
@@ -366,11 +434,13 @@
         padding: 5px 10px;
         display: block;
         transition: 0.5s ease all;
+
         li {
           display: flex;
           justify-content: space-between;
         }
       }
+
       a:hover {
         background-color: $light-gray;
         border-radius: 5px;
@@ -379,9 +449,10 @@
       }
     }
   }
+
   .contact-form {
     border-radius: 0 0 10px 10px;
-    min-height: 450px;
+    height: auto;
     background: rgba(71, 51, 201, 1);
     background: -moz-linear-gradient(left, rgba(71, 51, 201, 1) 0%, rgba(27, 118, 255, 1) 100%);
     background: -webkit-gradient(left top, right top, color-stop(0%, rgba(71, 51, 201, 1)), color-stop(100%, rgba(27, 118, 255, 1)));
@@ -390,25 +461,33 @@
     background: -ms-linear-gradient(left, rgba(71, 51, 201, 1) 0%, rgba(27, 118, 255, 1) 100%);
     background: linear-gradient(to right, rgba(71, 51, 201, 1) 0%, rgba(27, 118, 255, 1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4733c9', endColorstr='$principal-blue', GradientType=1);
-    padding: 25px;
+    padding: 35px 25px;
+
     .text-form {
       color: white;
       display: flex;
       justify-content: center;
       text-align: center;
       flex-wrap: wrap;
-      padding-top: 20px;
+
       span {
         font-size: 5em;
         width: 100%;
       }
+
       h6 {
         font-size: 2.1em;
+        margin-bottom: 0;
+        font-weight: 300;
       }
+
       p {
         font-size: 1.5em;
+        margin: 5px 0;
+        font-weight: 300;
       }
     }
+
     .success-msg {
       h6 {
         font-size: 2.1em;
@@ -416,12 +495,15 @@
         text-align: center;
       }
     }
+
     .form {
       display: flex;
       flex-wrap: wrap;
+
       input {
         background-color: rgba(0, 0, 0, 0.25);
         border: none;
+        box-shadow: none;
         border-radius: 5px;
         font-size: 1em !important;
         padding: 0 15px;
@@ -430,30 +512,37 @@
         transition: 0.5s ease all;
         height: 45px;
       }
+
       input[type=email] {
         margin-bottom: 2px;
       }
+
       ::placeholder {
         color: $text-blue !important;
       }
+
       input[type=email]:not(.browser-default):focus:not([readonly]), input[type=email].invalid:not(.browser-default) {
         border-bottom: 0 solid #000;
         box-shadow: 0 0 0 0 transparent;
         background-color: white;
         transition: 0.5s ease all;
       }
+
       .helper-text {
         font-size: 1em;
         color: #ffcc00 !important;
+
         &:after {
           color: #ffcc00 !important;
         }
       }
     }
+
     .send-btn {
       width: 100%;
       text-align: center;
       margin-top: 10px;
+
       input {
         padding: 0 10px;
         width: 100%;
@@ -468,6 +557,7 @@
         height: 45px !important;
       }
     }
+
     .send-btn:hover {
       input {
         color: $text-blue;
@@ -484,14 +574,17 @@
   height: 320px;
   background-repeat: no-repeat;
   background-position-y: center;
+
   .container {
     height: 100%;
+
     .row {
       height: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
       margin-bottom: 0;
+
       .banner-text {
         h1 {
           color: white;
@@ -499,22 +592,27 @@
           white-space: nowrap;
         }
       }
+
       .banner-text-1 {
         text-align: right;
+
         h4 {
           font-size: 2em;
           color: white;
           margin: 0;
         }
+
         h5 {
           font-weight: 500;
           color: white;
           margin: 10px 0;
         }
+
         .banner-btn {
           width: 100%;
           text-align: right;
           margin-top: 20px;
+
           a {
             padding: 10px;
             width: 50%;
@@ -527,6 +625,7 @@
             transition: 0.5s ease all;
           }
         }
+
         .banner-btn:hover {
           a {
             color: $text-blue;
@@ -542,23 +641,29 @@
   .main-posts {
     .main-post {
       height: 330px;
+
       .media-post {
         width: 15%;
       }
+
       .post-content {
         width: 85%;
       }
     }
+
     .main-post:hover {
       .media-post {
         width: 20%;
       }
+
       .post-content {
         width: 80%;
       }
     }
+
     .secondary-post {
       height: 160px;
+
       .post-content {
         .post-tittle {
           width: 100%;
@@ -583,6 +688,7 @@
   }
   .banner {
     height: 260px;
+
     .container {
       .row {
         .banner-text {
@@ -590,6 +696,7 @@
             font-size: 3.4em;
           }
         }
+
         .banner-text-1 {
           h4 {
           }
@@ -608,21 +715,26 @@
       .post-content {
         padding: 20px;
         justify-content: center;
+
         .post-title {
           a {
             margin-bottom: 0;
+
             h2 {
               font-size: 2.4em;
               margin: 0;
             }
           }
         }
+
         .post-text {
           font-size: 1em;
         }
+
         .post-info {
           .categories {
             margin: 0;
+
             a {
               font-size: 0.9em;
             }
@@ -630,21 +742,26 @@
         }
       }
     }
+
     .secondary-post {
       .post-content {
         .post-title {
           width: 90%;
+
           h4 {
             font-size: 1.5em;
             margin-top: 0.5rem;
           }
         }
+
         .post-info {
           .categories {
             span {
               font-size: 1em;
             }
+
             margin: 0;
+
             a {
               font-size: 0.9em;
             }
@@ -657,6 +774,7 @@
     .padding-col {
       padding-top: 50px;
     }
+
     .post-selector {
       .selection {
         a {
@@ -667,16 +785,19 @@
   }
   .posts {
     min-height: auto;
+
     .post {
       .media-post {
         .overlay {
           padding: 20px 10px;
+
           p {
             font-size: 1.1em;
             line-height: 1px;
           }
         }
       }
+
       .post-content {
         .post-title {
           a {
@@ -685,11 +806,13 @@
             }
           }
         }
+
         .post-text {
           p {
             font-size: 1em;
           }
         }
+
         .post-info {
           ul {
             li {
@@ -701,6 +824,7 @@
         }
       }
     }
+
     .pagination {
       ul {
         li {
@@ -714,41 +838,51 @@
       padding-top: 50px;
       padding-bottom: 50px;
     }
+
     .categories {
       h6 {
         font-size: 1.3em;
 
       }
+
       ul {
         a {
           font-size: 1.1em;
         }
       }
     }
+
     .contact-form {
       .text-form {
         padding-right: 0;
+
         span {
           font-size: 5em;
         }
+
         h6 {
           font-size: 1.6em;
+
           br {
             display: none;
           }
         }
+
         p {
           font-size: 1.4em;
           margin-top: 0;
         }
       }
+
       .form {
         display: flex;
+
         input {
           font-size: 1em !important;
           overflow: hidden;
         }
       }
+
       .send-btn {
         a {
           font-size: 1.2em;
@@ -758,6 +892,7 @@
   }
   .banner {
     height: 250px;
+
     .container {
       .row {
         .banner-text {
@@ -765,13 +900,16 @@
             font-size: 2.5em;
           }
         }
+
         .banner-text-1 {
           h4 {
             font-size: 1.4em;
           }
+
           h5 {
             font-size: 1.3em;
           }
+
           .banner-btn {
             a {
               font-size: 1.2em;
@@ -789,28 +927,35 @@
       height: auto;
       margin-bottom: 15px;
       min-height: 180px;
+
       .media-post {
         height: auto;
         width: 10%;
       }
+
       .post-content {
         padding: 10px;
         width: 90%;
+
         .post-title {
           a {
             margin: 0;
+
             h2 {
               font-size: 2.3em;
               margin: 0;
             }
           }
         }
+
         .post-text {
           font-size: 1em;
         }
+
         .post-info {
           .categories {
             margin: 0;
+
             a, span {
               font-size: 0.9em;
             }
@@ -818,44 +963,56 @@
         }
       }
     }
+
     .main-post:hover {
       .media-post {
         width: 10%;
       }
+
       .post-content {
         width: 90%;
       }
     }
+
     .secondary-post:hover {
       .media-post {
         width: 2%;
       }
+
       .post-content {
         width: 98%;
+
         .post-title {
         }
       }
     }
+
     .secondary-post {
       height: auto;
       min-height: 120px;
+
       .media-post {
         width: 2%;
       }
+
       .post-content {
         width: 98%;
         padding: 10px;
         justify-content: center;
+
         .post-title {
           width: 90%;
+
           h4 {
             font-size: 1.5em;
             margin-top: 0;
           }
         }
+
         .post-info {
           .categories {
             margin: 0;
+
             a, span {
               font-size: 0.9em;
             }
@@ -863,6 +1020,7 @@
         }
       }
     }
+
     .col:nth-child(2) {
       .secondary-post:first-child {
         margin-bottom: 15px;
@@ -876,24 +1034,30 @@
   }
   .posts {
     height: auto;
+
     .post {
       flex-wrap: wrap;
       padding-right: 0;
       margin: 20px 20px 20px 0;
       height: auto;
+
       .media-post {
         width: 100%;
         height: 80px;
+
         .overlay {
           padding: 15px 0 0 10px;
+
           p {
             margin-top: 0;
             text-align: left;
           }
         }
       }
+
       .post-content {
         width: 100%;
+
         .post-title {
           h3 {
             font-size: 2em;
@@ -901,11 +1065,14 @@
         }
       }
     }
+
     .post:hover {
       transition: 0.5s ease all;
+
       .media-post {
         width: 100%;
       }
+
       .post-content {
         width: 100%;
       }
@@ -915,23 +1082,29 @@
     .categories {
       padding: 10px 15px;
     }
+
     .contact-form {
       min-height: auto;
+
       .form {
         display: flex;
+
         input {
           height: 2em !important;
           padding: 7px;
         }
       }
+
       .text-form {
         h6 {
           font-size: 1.5em;
+
           br {
             display: none;
           }
         }
       }
+
       .send-btn {
         a {
           padding: 7px;
@@ -941,6 +1114,7 @@
   }
   .banner {
     height: 200px;
+
     .container {
       .row {
         .banner-text {
@@ -949,14 +1123,17 @@
             white-space: nowrap;
           }
         }
+
         .banner-text-1 {
           h4 {
             font-size: 1.3em;
             margin-top: 0;
           }
+
           h5 {
             font-size: 1.2em;
           }
+
           .banner-btn {
             a {
               font-size: 1.1em;
@@ -981,22 +1158,27 @@
         margin-bottom: 10px;
       }
     }
+
     .secondary-post {
       height: auto;
       min-height: auto;
     }
+
     .main-post {
       flex-wrap: wrap;
       height: auto;
       margin-bottom: 10px;
       min-height: auto;
+
       .media-post {
         height: 80px;
         width: 100%;
         border-radius: 10px;
       }
+
       .post-content {
         width: 100%;
+
         .post-title {
           a {
             h2 {
@@ -1006,21 +1188,26 @@
         }
       }
     }
+
     .main-post:hover {
       .media-post {
         width: 100%;
       }
+
       .post-content {
         width: 100%;
       }
     }
+
     .secondary-post:hover {
       .media-post {
         width: 3%;
         overflow: hidden;
       }
+
       .post-content {
         width: 97%;
+
         .post-title {
           a {
             color: $titles;
@@ -1033,8 +1220,10 @@
     .padding-col {
       padding-top: 0;
     }
+
     .post-selector {
       margin-top: 20px;
+
       .selection {
         a {
           font-size: 0.8em;
@@ -1044,19 +1233,23 @@
   }
   .posts {
     height: auto;
+
     .pagination {
       padding: 0;
+
       ul {
         li {
           height: 30px;
           width: 30px;
           line-height: 30px;
+
           a {
             height: 30px;
             width: 30px;
             line-height: 30px;
           }
         }
+
         .current {
           height: 30px;
           width: 30px;
@@ -1070,13 +1263,16 @@
       padding-top: 0;
       padding-bottom: 25px;
     }
+
     .contact-form {
       min-height: auto;
+
       .text-form {
         h6 {
           font-size: 1.4em;
           margin-bottom: 0;
         }
+
         p {
           font-size: 1.2em;
           margin: 5px 0;
@@ -1086,9 +1282,11 @@
   }
   .result-container {
     height: auto;
+
     h4 {
       font-size: 1.8em;
     }
+
     h3 {
       font-size: 2em;
     }
@@ -1096,9 +1294,11 @@
   .banner {
     height: auto;
     padding: 20px 0;
+
     .container {
       .row {
         display: block;
+
         .banner-text {
           h1 {
             padding: 0;
@@ -1108,22 +1308,27 @@
             font-size: 2.2em;
           }
         }
+
         .banner-text-1 {
           h4 {
             padding: 0;
             text-align: center;
             margin: 0;
             font-size: 1.3em;
+
             br {
               display: none;
             }
           }
+
           h5 {
             font-size: 1.2em;
             text-align: center;
           }
+
           .banner-btn {
             width: 100%;
+
             a {
               width: 100%;
               padding: 5px;

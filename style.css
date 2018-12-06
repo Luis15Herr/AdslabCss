@@ -1626,7 +1626,7 @@ main {
     color: #0078FF; }
 .sidebar .contact-form {
   border-radius: 0 0 10px 10px;
-  min-height: 450px;
+  height: auto;
   background: #4733c9;
   background: -moz-linear-gradient(left, #4733c9 0%, #1b76ff 100%);
   background: -webkit-gradient(left top, right top, color-stop(0%, #4733c9), color-stop(100%, #1b76ff));
@@ -1635,21 +1635,24 @@ main {
   background: -ms-linear-gradient(left, #4733c9 0%, #1b76ff 100%);
   background: linear-gradient(to right, #4733c9 0%, #1b76ff 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4733c9', endColorstr='$principal-blue', GradientType=1);
-  padding: 25px; }
+  padding: 35px 25px; }
   .sidebar .contact-form .text-form {
     color: white;
     display: flex;
     justify-content: center;
     text-align: center;
-    flex-wrap: wrap;
-    padding-top: 20px; }
+    flex-wrap: wrap; }
     .sidebar .contact-form .text-form span {
       font-size: 5em;
       width: 100%; }
     .sidebar .contact-form .text-form h6 {
-      font-size: 2.1em; }
+      font-size: 2.1em;
+      margin-bottom: 0;
+      font-weight: 300; }
     .sidebar .contact-form .text-form p {
-      font-size: 1.5em; }
+      font-size: 1.5em;
+      margin: 5px 0;
+      font-weight: 300; }
   .sidebar .contact-form .success-msg h6 {
     font-size: 2.1em;
     color: white;
@@ -1660,6 +1663,7 @@ main {
     .sidebar .contact-form .form input {
       background-color: rgba(0, 0, 0, 0.25);
       border: none;
+      box-shadow: none;
       border-radius: 5px;
       font-size: 1em !important;
       padding: 0 15px;
@@ -2385,7 +2389,7 @@ main {
       margin-bottom: 2px; }
     .form-content .form-inputs .input-field .helper-text {
       font-size: 1em; }
-  .form-content .form-inputs .countries-wrapper .dropdown-content li > a, .form-content .form-inputs .countries-wrapper .dropdown-content li > span {
+  .form-content .form-inputs .form-select .dropdown-content li > a, .form-content .form-inputs .form-select .dropdown-content li > span {
     color: #999; }
   .form-content .text-form {
     padding-top: 35px;
@@ -2966,7 +2970,7 @@ main {
           display: flex;
           justify-content: center;
           align-items: center;
-          padding: 0 25px 20px 25px; }
+          padding: 0 25px 0 25px; }
           .form-section .container .row .contact-form .form-text span {
             color: white;
             font-size: 4em;
@@ -3101,14 +3105,16 @@ main {
     .related-posts .related-post .post-content .post-title h3 {
       font-size: 1.6em; }
 
-  .form-section .container .row .contact-form .form-text span {
-    font-size: 3.2em; }
-  .form-section .container .row .contact-form .form-text .text h6 {
-    font-size: 1.6em; }
-  .form-section .container .row .contact-form .form-text .text p {
-    font-size: 1.4em; }
-  .form-section .container .row .success-msg h6 {
-    font-size: 1.6em; } }
+  .form-section {
+    height: 200px; }
+    .form-section .container .row .contact-form .form-text span {
+      font-size: 3.2em; }
+    .form-section .container .row .contact-form .form-text .text h6 {
+      font-size: 1.6em; }
+    .form-section .container .row .contact-form .form-text .text p {
+      font-size: 1.4em; }
+    .form-section .container .row .success-msg h6 {
+      font-size: 1.6em; } }
 @media (max-width: 800px) {
   .single-post {
     padding-top: 70px; }
@@ -3170,7 +3176,6 @@ main {
             font-size: 0.8em; }
 
   .form-section {
-    height: 200px;
     margin-top: 45px; }
     .form-section .container .row .col {
       padding: 0 40px; }

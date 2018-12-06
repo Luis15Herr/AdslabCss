@@ -2627,7 +2627,7 @@ main {
     font-size: 2.8em;
     color: #666; }
 .single-posts .post-content {
-  padding: 0 170px;
+  padding: 0;
   /* =WordPress Core
   -------------------------------------------------------------- */
   /* Text meant only for screen readers. */ }

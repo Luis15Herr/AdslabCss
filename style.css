@@ -531,6 +531,9 @@ main {
     width: 85%; }
     .blog-header .site-nav-blog .predicted-search #datafetch li a {
       font-size: 1em; } }
+.page-footer .footer-gradient {
+  display: none; }
+
 .page-footer {
   background-color: #f1f1f1; }
   .page-footer .footer-content .col {

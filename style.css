@@ -1316,9 +1316,11 @@ main {
         margin-top: 15px; }
       .subscription-section .container .row .col .subscription-calc .subscription-card .calc-result {
         padding: 30px 0;
-        font-size: 2.5em;
+        font-size: 3.5em;
         display: block;
         color: #1d73fe; }
+        .subscription-section .container .row .col .subscription-calc .subscription-card .calc-result hr {
+          margin: 100px; }
 
   .call-to-call .row {
     flex-wrap: wrap; }

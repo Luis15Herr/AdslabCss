@@ -390,6 +390,10 @@ div.wpcf7-validation-errors {
     transform: rotate(-200deg);
 }
 
+.loggeg-in .topnav{
+    padding-top: 100px!important;
+}
+
 @keyframes spring-spinner-animation {
     0% {
         border-width: calc(60px / 7);

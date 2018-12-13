@@ -908,9 +908,21 @@ main {
           border-bottom: 2px solid #1d73fe; }
         .subscription-section .container .row .col .subscription-calc .subscription-card .calc-result {
           padding: 30px 0;
-          font-size: 3.5em;
           display: block;
-          color: #1d73fe; }
+          color: #1d73fe;
+          line-height: 1; }
+          .subscription-section .container .row .col .subscription-calc .subscription-card .calc-result hr {
+            width: 55%;
+            opacity: 0.4;
+            margin: 5px auto; }
+          .subscription-section .container .row .col .subscription-calc .subscription-card .calc-result #result {
+            font-size: 3.5rem; }
+            .subscription-section .container .row .col .subscription-calc .subscription-card .calc-result #result label {
+              font-size: 1.5rem; }
+          .subscription-section .container .row .col .subscription-calc .subscription-card .calc-result #exchange {
+            font-size: 2.4rem; }
+            .subscription-section .container .row .col .subscription-calc .subscription-card .calc-result #exchange label {
+              font-size: 1.3rem; }
 
 .subscription-card-active {
   background-color: #1b76ff !important;
@@ -1316,11 +1328,21 @@ main {
         margin-top: 15px; }
       .subscription-section .container .row .col .subscription-calc .subscription-card .calc-result {
         padding: 30px 0;
-        font-size: 3.5em;
         display: block;
-        color: #1d73fe; }
+        color: #1d73fe;
+        line-height: 1; }
         .subscription-section .container .row .col .subscription-calc .subscription-card .calc-result hr {
-          margin: 100px; }
+          width: 55%;
+          opacity: 0.4;
+          margin: 5px auto; }
+        .subscription-section .container .row .col .subscription-calc .subscription-card .calc-result #result {
+          font-size: 2.5rem; }
+          .subscription-section .container .row .col .subscription-calc .subscription-card .calc-result #result label {
+            font-size: 1rem; }
+        .subscription-section .container .row .col .subscription-calc .subscription-card .calc-result #exchange {
+          font-size: 2rem; }
+          .subscription-section .container .row .col .subscription-calc .subscription-card .calc-result #exchange label {
+            font-size: 1rem; }
 
   .call-to-call .row {
     flex-wrap: wrap; }
@@ -1352,7 +1374,15 @@ main {
 
   .subscription-section {
     height: auto;
-    margin-top: 60px; } }
+    margin-top: 60px; }
+    .subscription-section .container .row .col .subscription-calc .subscription-card .calc-result #result {
+      font-size: 2rem; }
+      .subscription-section .container .row .col .subscription-calc .subscription-card .calc-result #result label {
+        font-size: 0.7rem; }
+    .subscription-section .container .row .col .subscription-calc .subscription-card .calc-result #exchange {
+      font-size: 1.5rem; }
+      .subscription-section .container .row .col .subscription-calc .subscription-card .calc-result #exchange label {
+        font-size: 0.5rem; } }
 .body-blog {
   padding-top: 105px; }
   .body-blog h1, .body-blog h2, .body-blog h3, .body-blog h4, .body-blog h5, .body-blog h6 {
@@ -2632,7 +2662,7 @@ main {
     font-size: 2.8em;
     color: #666; }
 .single-posts .post-content {
-  padding: 0;
+  padding: 0 90px;
   /* =WordPress Core
   -------------------------------------------------------------- */
   /* Text meant only for screen readers. */ }
@@ -3133,7 +3163,7 @@ main {
     .single-posts .post-title h1 {
       font-size: 2.5em; }
   .single-posts .post-content {
-    padding: 0 105px; }
+    padding: 0 55px; }
     .single-posts .post-content p {
       text-align: justify;
       font-size: 1em; }
@@ -3205,7 +3235,7 @@ main {
     .single-posts .post-title h1 {
       font-size: 2em; }
   .single-posts .post-content {
-    padding: 0 20px; }
+    padding: 0 10px; }
     .single-posts .post-content h1 {
       font-size: 2em; }
     .single-posts .post-content h2 {

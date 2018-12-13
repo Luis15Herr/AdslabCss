@@ -389,11 +389,9 @@ div.wpcf7-validation-errors {
     animation: spring-spinner-animation 2s ease-in-out infinite;
     transform: rotate(-200deg);
 }
-
-.loggeg-in .topnav{
-    padding-top: 100px!important;
+.datepicker-modal{
+    width: 100%;
 }
-
 @keyframes spring-spinner-animation {
     0% {
         border-width: calc(60px / 7);
@@ -426,6 +424,11 @@ div.wpcf7-validation-errors {
     width: 100%;
     z-index: 9999999999;
 }
+
+input[type=date]:not(.browser-default):focus:not([readonly]) + label{
+    color: #9e9e9e;
+}
+
 @media screen and (max-width: 1440px){
     .single-post #mailpoet_form_2 .mailpoet_validate_success {
         font-size: 1.8em;

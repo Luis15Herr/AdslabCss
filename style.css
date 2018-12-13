@@ -1,4 +1,6 @@
 @import url(materialize.css);
+@import url(dosisfont.css);
+@import url(style-fonts.css);
 body * {
   outline: none; }
 body h1, body h2, body h3, body h4, body h5, body h6 {

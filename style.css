@@ -2680,7 +2680,7 @@ main {
     list-style: initial !important;
     padding: 0 20px; }
     .single-posts .post-content ol li {
-      list-style: initial !important; }
+      list-style: decimal !important; }
   .single-posts .post-content p {
     text-align: justify;
     font-size: 1.1em;
@@ -3558,6 +3558,19 @@ main {
     .helpPage-content .helpPage-question .title span {
       font-size: 0.5em;
       margin-right: 15px; }
+  .helpPage-content .helpPage-question .text {
+    font-size: 1.5em;
+    color: #333; }
+  .helpPage-content ul {
+    list-style: initial !important;
+    padding: 0 20px; }
+    .helpPage-content ul li {
+      list-style: initial !important; }
+  .helpPage-content ol {
+    list-style: initial !important;
+    padding: 0 20px; }
+    .helpPage-content ol li {
+      list-style: decimal !important; }
 
 section.helpPage-content:last-child {
   padding-top: 0; }

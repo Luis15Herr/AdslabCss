@@ -2657,17 +2657,30 @@ main {
       top: 44%; }
 .single-posts .post-inner-content {
   display: inline-block;
-  margin: auto; }
+  margin: auto;
+  width: 100%; }
 .single-posts .post-title {
-  padding: 0 90px; }
+  width: 85%;
+  margin: auto; }
   .single-posts .post-title h1 {
     font-size: 2.8em;
     color: #666; }
 .single-posts .post-content {
-  padding: 0 90px;
+  width: 85%;
+  margin: auto;
   /* =WordPress Core
   -------------------------------------------------------------- */
   /* Text meant only for screen readers. */ }
+  .single-posts .post-content ul {
+    list-style: initial !important;
+    padding: 0 20px; }
+    .single-posts .post-content ul li {
+      list-style: initial !important; }
+  .single-posts .post-content ol {
+    list-style: initial !important;
+    padding: 0 20px; }
+    .single-posts .post-content ol li {
+      list-style: initial !important; }
   .single-posts .post-content p {
     text-align: justify;
     font-size: 1.1em;
@@ -3123,8 +3136,10 @@ main {
 @media (max-width: 1024px) {
   .single-posts .post-banner {
     height: 175px; }
+  .single-posts .post-title {
+    width: 80%; }
   .single-posts .post-content {
-    padding: 0 140px; }
+    width: 80%; }
 
   .more-posts .after-before-posts .post .post-content .post-title h3 {
     font-size: 1.6em; }
@@ -3160,15 +3175,11 @@ main {
     height: 150px; }
     .single-posts .post-banner .post-info {
       padding: 0 55px; }
-  .single-posts .post-title {
-    padding: 0 55px; }
-    .single-posts .post-title h1 {
-      font-size: 2.5em; }
-  .single-posts .post-content {
-    padding: 0 55px; }
-    .single-posts .post-content p {
-      text-align: justify;
-      font-size: 1em; }
+  .single-posts .post-title h1 {
+    font-size: 2.5em; }
+  .single-posts .post-content p {
+    text-align: justify;
+    font-size: 1em; }
   .single-posts .social-sharing-mobile {
     display: flex;
     width: 100%; }
@@ -3232,24 +3243,20 @@ main {
     height: 125px; }
     .single-posts .post-banner .post-info {
       padding: 0 10px; }
-  .single-posts .post-title {
-    padding: 0 10px; }
-    .single-posts .post-title h1 {
-      font-size: 2em; }
-  .single-posts .post-content {
-    padding: 0 10px; }
-    .single-posts .post-content h1 {
-      font-size: 2em; }
-    .single-posts .post-content h2 {
-      font-size: 1.8em; }
-    .single-posts .post-content h3 {
-      font-size: 1.6em; }
-    .single-posts .post-content h4 {
-      font-size: 1.4em; }
-    .single-posts .post-content h5 {
-      font-size: 1.2em; }
-    .single-posts .post-content h6 {
-      font-size: 1.1em; }
+  .single-posts .post-title h1 {
+    font-size: 2em; }
+  .single-posts .post-content h1 {
+    font-size: 2em; }
+  .single-posts .post-content h2 {
+    font-size: 1.8em; }
+  .single-posts .post-content h3 {
+    font-size: 1.6em; }
+  .single-posts .post-content h4 {
+    font-size: 1.4em; }
+  .single-posts .post-content h5 {
+    font-size: 1.2em; }
+  .single-posts .post-content h6 {
+    font-size: 1.1em; }
 
   .more-posts .after-before-posts {
     padding: 0; }

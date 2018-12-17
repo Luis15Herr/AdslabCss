@@ -59,29 +59,33 @@
     }
   }
 
-  .post-inner{
+  .post-inner {
     position: relative;
-    .post-social-share{
+
+    .post-social-share {
       width: 5%;
       display: inline-block;
       height: 100%;
       top: 0;
       bottom: 0;
       position: absolute;
-      .social-position{
+
+      .social-position {
         position: sticky;
         top: 44%;
       }
     }
   }
 
-  .post-inner-content{
+  .post-inner-content {
     display: inline-block;
     margin: auto;
+    width: 100%;
   }
 
   .post-title {
-    padding: 0 90px;
+    width: 85%;
+    margin: auto;
 
     h1 {
       font-size: 2.8em;
@@ -90,7 +94,24 @@
   }
 
   .post-content {
-    padding: 0 90px;
+    width: 85%;
+    margin: auto;
+
+    ul {
+      list-style: initial !important;
+      padding: 0 20px;
+      li {
+        list-style: initial !important;
+      }
+    }
+
+    ol {
+      list-style: initial !important;
+      padding: 0 20px;
+      li {
+        list-style: initial !important;
+      }
+    }
 
     p {
       text-align: justify;
@@ -286,7 +307,7 @@
         background-color: $light-gray;
         color: $gray;
         border-radius: 30px;
-        padding:0;
+        padding: 0;
       }
     }
   }
@@ -851,8 +872,12 @@
       height: 175px;
     }
 
+    .post-title{
+      width: 80%;
+    }
+
     .post-content {
-      padding: 0 140px;
+      width: 80%;
     }
   }
   .more-posts {
@@ -905,6 +930,7 @@
   }
   .form-section {
     height: 200px;
+
     .container {
       .row {
         .contact-form {
@@ -949,16 +975,12 @@
     }
 
     .post-title {
-      padding: 0 55px;
-
       h1 {
         font-size: 2.5em;
       }
     }
 
     .post-content {
-      padding: 0 55px;
-
       p {
         text-align: justify;
         font-size: 1em;
@@ -1096,16 +1118,12 @@
     }
 
     .post-title {
-      padding: 0 10px;
-
       h1 {
         font-size: 2em;
       }
     }
 
     .post-content {
-      padding: 0 10px;
-
       h1 {
         font-size: 2em;
       }

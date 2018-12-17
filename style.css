@@ -2668,7 +2668,7 @@ main {
   margin: auto; }
   .single-posts .post-title h1 {
     font-size: 2.8em;
-    color: #666; }
+    color: #333; }
 .single-posts .post-content {
   width: 85%;
   margin: auto;
@@ -2689,6 +2689,20 @@ main {
     text-align: justify;
     font-size: 1.1em;
     color: #666; }
+  .single-posts .post-content h1, .single-posts .post-content h2, .single-posts .post-content h3, .single-posts .post-content h4, .single-posts .post-content h5, .single-posts .post-content h6 {
+    color: #666; }
+  .single-posts .post-content h1 {
+    font-size: 2.5em; }
+  .single-posts .post-content h2 {
+    font-size: 2.3em; }
+  .single-posts .post-content h3 {
+    font-size: 2.1em; }
+  .single-posts .post-content h4 {
+    font-size: 1.9em; }
+  .single-posts .post-content h5 {
+    font-size: 1.7em; }
+  .single-posts .post-content h6 {
+    font-size: 1.5em; }
   .single-posts .post-content .alignnone {
     margin: 5px 20px 20px 0; }
   .single-posts .post-content .aligncenter,
@@ -3144,6 +3158,18 @@ main {
     width: 80%; }
   .single-posts .post-content {
     width: 80%; }
+    .single-posts .post-content h1 {
+      font-size: 2.3em; }
+    .single-posts .post-content h2 {
+      font-size: 2.1em; }
+    .single-posts .post-content h3 {
+      font-size: 1.9em; }
+    .single-posts .post-content h4 {
+      font-size: 1.7em; }
+    .single-posts .post-content h5 {
+      font-size: 1.5em; }
+    .single-posts .post-content h6 {
+      font-size: 1.3em; }
 
   .more-posts .after-before-posts .post .post-content .post-title h3 {
     font-size: 1.6em; }
@@ -3248,19 +3274,19 @@ main {
     .single-posts .post-banner .post-info {
       padding: 0 10px; }
   .single-posts .post-title h1 {
-    font-size: 2em; }
+    font-size: 2.1em; }
   .single-posts .post-content h1 {
-    font-size: 2em; }
+    font-size: 1.9em; }
   .single-posts .post-content h2 {
-    font-size: 1.8em; }
+    font-size: 1.7em; }
   .single-posts .post-content h3 {
-    font-size: 1.6em; }
+    font-size: 1.5em; }
   .single-posts .post-content h4 {
-    font-size: 1.4em; }
+    font-size: 1.3em; }
   .single-posts .post-content h5 {
-    font-size: 1.2em; }
-  .single-posts .post-content h6 {
     font-size: 1.1em; }
+  .single-posts .post-content h6 {
+    font-size: 0.9em; }
 
   .more-posts .after-before-posts {
     padding: 0; }
@@ -3526,6 +3552,8 @@ main {
 
 .helpPage-content {
   padding: 100px 0;
+  width: 90%;
+  margin: auto;
   /*---Help-Page-Questions---*/ }
   .helpPage-content .help {
     display: flex;

@@ -89,7 +89,7 @@
 
     h1 {
       font-size: 2.8em;
-      color: $text-gray;
+      color: $titles;
     }
   }
 
@@ -100,6 +100,7 @@
     ul {
       list-style: initial !important;
       padding: 0 20px;
+
       li {
         list-style: initial !important;
       }
@@ -108,6 +109,7 @@
     ol {
       list-style: initial !important;
       padding: 0 20px;
+
       li {
         list-style: decimal !important;
       }
@@ -117,6 +119,34 @@
       text-align: justify;
       font-size: 1.1em;
       color: $text-gray;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      color: $text-gray;
+    }
+
+    h1 {
+      font-size: 2.5em;
+    }
+
+    h2 {
+      font-size: 2.3em;
+    }
+
+    h3 {
+      font-size: 2.1em;
+    }
+
+    h4 {
+      font-size: 1.9em;
+    }
+
+    h5 {
+      font-size: 1.7em;
+    }
+
+    h6 {
+      font-size: 1.5em;
     }
 
     /* =WordPress Core
@@ -872,12 +902,36 @@
       height: 175px;
     }
 
-    .post-title{
+    .post-title {
       width: 80%;
     }
 
     .post-content {
       width: 80%;
+
+      h1 {
+        font-size: 2.3em;
+      }
+
+      h2 {
+        font-size: 2.1em;
+      }
+
+      h3 {
+        font-size: 1.9em;
+      }
+
+      h4 {
+        font-size: 1.7em;
+      }
+
+      h5 {
+        font-size: 1.5em;
+      }
+
+      h6 {
+        font-size: 1.3em;
+      }
     }
   }
   .more-posts {
@@ -1119,33 +1173,33 @@
 
     .post-title {
       h1 {
-        font-size: 2em;
+        font-size: 2.1em;
       }
     }
 
     .post-content {
       h1 {
-        font-size: 2em;
+        font-size: 1.9em;
       }
 
       h2 {
-        font-size: 1.8em;
+        font-size: 1.7em;
       }
 
       h3 {
-        font-size: 1.6em;
+        font-size: 1.5em;
       }
 
       h4 {
-        font-size: 1.4em;
+        font-size: 1.3em;
       }
 
       h5 {
-        font-size: 1.2em;
+        font-size: 1.1em;
       }
 
       h6 {
-        font-size: 1.1em;
+        font-size: 0.9em;
       }
     }
   }

@@ -590,6 +590,7 @@
           color: white;
           font-size: 3.8em;
           white-space: nowrap;
+          font-family: 'Dosis', sans-serif !important;
         }
       }
 
@@ -600,12 +601,14 @@
           font-size: 2em;
           color: white;
           margin: 0;
+          font-family: 'Dosis', sans-serif !important;
         }
 
         h5 {
           font-weight: 500;
           color: white;
           margin: 10px 0;
+          font-family: 'Dosis', sans-serif !important;
         }
 
         .banner-btn {
@@ -622,7 +625,8 @@
             font-size: 1.2em;
             color: $text-gray;
             background-color: white;
-            transition: 0.5s ease all;
+            transition: 0.4s ease all;
+            font-family: 'Dosis', sans-serif !important;
           }
         }
 

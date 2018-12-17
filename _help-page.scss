@@ -251,20 +251,20 @@
       font-size: 1.5em;
       color: $titles;
     }
-  }
-  ul {
-    list-style: initial !important;
-    padding: 0 20px;
-    li {
+    ul {
       list-style: initial !important;
+      padding: 0 20px;
+      li {
+        list-style: initial !important;
+      }
     }
-  }
 
-  ol {
-    list-style: initial !important;
-    padding: 0 20px;
-    li {
-      list-style: decimal !important;
+    ol {
+      list-style: initial !important;
+      padding: 0 20px;
+      li {
+        list-style: decimal !important;
+      }
     }
   }
 }

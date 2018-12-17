@@ -1760,17 +1760,20 @@ main {
       .banner .container .row .banner-text h1 {
         color: white;
         font-size: 3.8em;
-        white-space: nowrap; }
+        white-space: nowrap;
+        font-family: 'Dosis', sans-serif !important; }
       .banner .container .row .banner-text-1 {
         text-align: right; }
         .banner .container .row .banner-text-1 h4 {
           font-size: 2em;
           color: white;
-          margin: 0; }
+          margin: 0;
+          font-family: 'Dosis', sans-serif !important; }
         .banner .container .row .banner-text-1 h5 {
           font-weight: 500;
           color: white;
-          margin: 10px 0; }
+          margin: 10px 0;
+          font-family: 'Dosis', sans-serif !important; }
         .banner .container .row .banner-text-1 .banner-btn {
           width: 100%;
           text-align: right;
@@ -1784,7 +1787,8 @@ main {
             font-size: 1.2em;
             color: #666;
             background-color: white;
-            transition: 0.5s ease all; }
+            transition: 0.4s ease all;
+            font-family: 'Dosis', sans-serif !important; }
         .banner .container .row .banner-text-1 .banner-btn:hover a {
           color: #0078FF;
           transition: 0.5s ease all; }
@@ -3561,15 +3565,15 @@ main {
   .helpPage-content .helpPage-question .text {
     font-size: 1.5em;
     color: #333; }
-  .helpPage-content ul {
+  .helpPage-content .helpPage-question ul {
     list-style: initial !important;
     padding: 0 20px; }
-    .helpPage-content ul li {
+    .helpPage-content .helpPage-question ul li {
       list-style: initial !important; }
-  .helpPage-content ol {
+  .helpPage-content .helpPage-question ol {
     list-style: initial !important;
     padding: 0 20px; }
-    .helpPage-content ol li {
+    .helpPage-content .helpPage-question ol li {
       list-style: decimal !important; }
 
 section.helpPage-content:last-child {

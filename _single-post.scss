@@ -97,6 +97,10 @@
     width: 85%;
     margin: auto;
 
+    blockquote{
+      border-left: solid 5px $principal-blue;
+    }
+
     ul {
       list-style: initial !important;
       padding: 0 20px;

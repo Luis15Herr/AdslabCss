@@ -2675,6 +2675,8 @@ main {
   /* =WordPress Core
   -------------------------------------------------------------- */
   /* Text meant only for screen readers. */ }
+  .single-posts .post-content blockquote {
+    border-left: solid 5px #1b76ff; }
   .single-posts .post-content ul {
     list-style: initial !important;
     padding: 0 20px; }
